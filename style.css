@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+}
+
+
+/* BANNER */
+
+.banner {
+    background-color: #f4b400;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.banner h2 {
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+/* CARDÁPIO */
+
+main {
+    padding: 50px 8%;
+}
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+}
+
+.cardapio {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.item {
+    background-color: white;
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.1);
+}
+
+
+/* IMAGENS */
+
+.imagem {
+    width: 100%;
+    height: 180px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    background-color: #eee;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* INFORMAÇÕES */
+
+.item h3 {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.item strong {
+    display: block;
+
+    color: #d62828;
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+
+/* BOTÃO ADICIONAR */
+
+.item button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: #f4b400;
+
+    color: #222;
+}
+
+
+/* PEDIDO */
+
+.pedido {
+    max-width: 700px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.pedido h2 {
+    margin-bottom: 20px;
+}
+
+#lista-pedido p {
+    color: #777;
+}
+
+.item-pedido {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 12px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+#total-pedido {
+    margin-top: 20px;
+
+    color: #d62828;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer p {
+    color: #ccc;
+
+    margin-top: 8px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 800px) {
+
+    .cardapio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .cardapio {
+        grid-template-columns: 1fr;
+    }
+
+}
